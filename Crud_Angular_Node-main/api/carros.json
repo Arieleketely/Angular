@@ -1,0 +1,13 @@
+{
+  "carros": [
+    {
+      "id": 1,
+      "placa": "gjs-6938",
+      "chassi": "7977vjdfh65",
+      "renavam": "347563",
+      "modelo": "hgt897",
+      "marca": "ford",
+      "ano": 2019
+    }
+  ]
+}

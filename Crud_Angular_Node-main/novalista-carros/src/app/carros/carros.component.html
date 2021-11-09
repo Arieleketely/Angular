@@ -1,0 +1,35 @@
+<form>
+  Placa: <p><input type="text"  name="placa" [(ngModel)]="carro.placa"></p> 
+  Chassi: <p><input type="text"  name="chassi" [(ngModel)]="carro.chassi"></p> 
+  Renavam: <p><input type="text"  name="renavam" [(ngModel)]="carro.renavam"></p> 
+  Modelo: <p><input type="text"  name="modelo" [(ngModel)]="carro.modelo"></p> 
+  Marca: <p><input type="text"  name="marca" [(ngModel)]="carro.marca"></p> 
+  Ano: <p><input type="text"  name="ano" [(ngModel)]="carro.ano"></p> 
+  <button (click)="cadastrar()">Botão</button>
+</form>
+<h2>Carros cadastrados:</h2>
+<table border="1" >
+    <tr>
+   <th>Placa</th>
+    <th>Chassi</th>
+   <th>Renavam</th>
+   <th> Modelo</th>
+   <th>Marca</th>
+   <th >Ano</th>
+   <th >Ações</th>
+</tr>
+  
+
+<tr *ngFor="let carro of carros">
+    <th>{{carro.placa}}</th> 
+    <th>{{carro.chassi}}</th> 
+    <th>{{carro.renavam}}</th> 
+    <th>{{carro.modelo}}</th> 
+    <th>{{carro.marca}}</th> 
+    <th>{{carro.ano}}</th> 
+    <th><button (click)="atualizar(carro.id)">Atualizar</button></th> 
+    <th><button (click)="remover(carro.id)">Deletar</button></th>
+  </tr>
+</table>
+
+
